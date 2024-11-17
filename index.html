@@ -1,116 +1,118 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
+   <head><link rel="stylesheet" type="text/css" href="public/css/style.css">
        <title>Yras hamburgare!</title>
        <meta charset="utf-8"/>
    </head>
    <body>
-        <header>
-            <h1>Välkommen till Yras hamburgarkök :D</h1>
-            <p>Vi erbjuder de bästa hamburgarna i stan, gjorda med kärlek och bra råvaror!</p>
+        <header id="mainheader">
+            <img id="headerbild" src="https://www.portalrestaurant.se/wp-content/uploads/2023/07/top-restaurangen.jpg" alt="headerbild" style="width:100%; height:50%;" >
+            <h1 id="headertext">Välkommen till Yras hamburgarkök</h1>
         </header>    
 
         <main>
-            <section>
-                <h3>Välj hamburgare:</h3>
-                <p>Utforska vårt breda utbud av goda hamburgare!</p>
-            </section>
+            <section id="burgers-section">
+                    <h3>Välj hamburgare:</h3>
+                    <p>Utforska vårt breda utbud av goda hamburgare!</p>
 
-            <div style="display: inline-block;">
+                    <div class="burger-grid">
+                        <div>
+                        <section>
+                            <h4>Cheeseburgare:</h4>
+                            <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-3d-illustration-cheese-burger-png-image_10245728.png" alt="Cheeseburgare">
+                        </section>
+
+                        <ul>
+                            <li>Innehåller <span class="highlight">gluten</span></li>
+                            <li>Innehåller <span class="highlight">laktos</span></li>
+                            <li>Lämplig för köttätare</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <section>
+                            <h4>Halloumiburgare:</h4>
+                            <img src="https://kfcrestaurants.be/wp-content/uploads/2021/04/Halloumi_Burger-1200x800px.png" alt="Halloumiburgare">
+                        </section>
+
+                        <ul>
+                            <li>Innehåller <span class="highlight">gluten</span></li>
+                            <li>Innehåller <span class="highlight">laktos</span></li>
+                            <li>Lämplig för vegetarianer</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <section> 
+                            <h4>Godisburgare:</h4>
+                            <img src="https://simplywonderfultoys.ca/cdn/shop/products/efrutti-mini-burger-gummi-candy-candy-funhouse-online-candy-store-canada_500x_a5fa70b8-9624-4adc-91e7-e17a0ce38d3e_grande.jpg?v=1636570866" alt="Godisburgare">
+                        </section>
+
+                        <ul>
+                            <li>Innehåller <span class="highlight">väldigt mycket socker</span></li>
+                            <li>Innehåller <span class="highlight">gelatin</span></li>
+                            <li>Lämplig för barn</li>
+                        </ul>
+                    </div>
+                    
+        </section>
+
+            <section id="info-section">
+                    <h3>Information:</h3>
+                    <p>Fyll i informationen vi behöver för att kunna leverera din hamburgare</p>
+
                 <section>
-                    <h4>Cheeseburgare:</h4>
-                    <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-3d-illustration-cheese-burger-png-image_10245728.png" alt="Cheeseburgare" style="width:200px; height:auto;">
+                    <p>
+                        <label for="förochefternamn">För- och efternamn</label><br>
+                        <input type="text" id="förochefternamn" name="fn" required="required" placeholder="För- och efternamn">
+                    </p>
+                    <p>
+                        <label for="emailadress">E-mail adress</label><br>
+                        <input type="email" id="emailadress" name="em" required="required" placeholder="E-mail adress">
+                    </p>
+                    <p>
+                        <label for="gata">Gata</label><br>
+                        <input type="text" id="gata" name="st" required="required" placeholder="Gata">
+                    </p>
+                    <p>
+                        <label for="husnummer">Husnummer</label><br>
+                        <input type="nummer" id="husnummer" name="nm" required="required" placeholder="Husnummer">
+                    </p>
                 </section>
 
-                <ul>
-                    <li>Innehåller gluten</li>
-                    <li>Innehåller laktos</li>
-                    <li>Lämplig för köttätare</li>
-                </ul>
-            </div>
-
-            <div style="display: inline-block;">
                 <section>
-                    <h4>Halloumiburgare:</h4>
-                    <img src="https://www.burgerking.lv/images/optimized/products/dbl-halloumi-king-desktop-1b9d33cf36fedb5fa6507bd08cf2225b.png" alt="Halloumiburgare" style="width:300px; height:auto;">
+                    <p>
+                        <label for="betalningsmetod">Betalningsmetod</label><br>
+                        <select id="betalningsmetod" name="rcp">
+                            <option selected="selected">Kreditkort</option>
+                            <option>Faktura</option>
+                            <option>Mynt</option>
+                            <option>Swish</option>
+                        </select>
+                    </p>
                 </section>
 
-                <ul>
-                    <li>Innehåller gluten</li>
-                    <li>Innehåller laktos</li>
-                    <li>Lämplig för vegetarianer</li>
-                </ul>
-            </div>
-
-            <div style="display: inline-block;">
                 <section>
-                    <h4>Godisburgare:</h4>
-                    <img src="https://simplywonderfultoys.ca/cdn/shop/products/efrutti-mini-burger-gummi-candy-candy-funhouse-online-candy-store-canada_500x_a5fa70b8-9624-4adc-91e7-e17a0ce38d3e_grande.jpg?v=1636570866" alt="Godisburgare" style="width:200px; height:auto;">
+                    <label>Välj kön</label><br>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">Man</label><br>
+
+                    <input type="radio" id="kvinna" name="gender" value="kvinna">
+                    <label for="kvinna">Kvinna</label><br>
+
+                    <input type="radio" id="ickebinär" name="gender" value="ickebinär">
+                    <label for="ickebinär">Icke-binär</label><br>
+
+                    <input type="radio" id="villintesäga" name="gender" value="villintesäga" checked>
+                    <label for="villintesäga">Vill inte säga</label>
                 </section>
 
-                <ul>
-                    <li>Innehåller väldigt mycket socker</li>
-                    <li>Innehåller gelatin</li>
-                    <li>Lämplig för barn</li>
-                </ul>
-            </div>
-
-            <section>
-                <h3>Information:</h3>
-                <p>Fyll i informationen vi behöver för att kunna leverera din hamburgare</p>
-            </section>
-
-            <section>
-                <p>
-                    <label for="firstandlastname">First- and last name</label><br>
-                    <input type="text" id="firstandlastname" name="fn" required="required" placeholder="First- and last name">
-                </p>
-                <p>
-                    <label for="emailadress">E-mail adress</label><br>
-                    <input type="email" id="emailadress" name="em" required="required" placeholder="E-mail adress">
-                </p>
-                <p>
-                    <label for="street">Street</label><br>
-                    <input type="text" id="street" name="st" required="required" placeholder="Street">
-                </p>
-                <p>
-                    <label for="housenumber">House number</label><br>
-                    <input type="number" id="street" name="nm" required="required" placeholder="House number">
-                </p>
-            </section>
-
-            <section>
-                <p>
-                    <label for="paymentmethod">Payment method</label><br>
-                    <select id="paymentmethod" name="rcp">
-                        <option selected="selected">Credit card</option>
-                        <option>Debit card</option>
-                        <option>Cash</option>
-                        <option>Swish</option>
-                    </select>
-                 </p>
-            </section>
-
-            <section>
-                <label>Gender</label><br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-
-                <input type="radio" id="nonbinary" name="gender" value="nonbinary">
-                <label for="nonbinary">Non-binary</label><br>
-
-                <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked>
-                <label for="undisclosed">Undisclosed</label>
-            </section>
-
-            <section>
-                <button type="submit">
-                    <img src="https://e7.pngegg.com/pngimages/554/935/png-clipart-triumph-motorcycles-ltd-triumph-daytona-650-triumph-daytona-675-triumph-daytona-600-motorbike-exhaust-system-car.png" style="width:40px; height:auto;">
-                    Place my order!
-                  </button>
+                <section>
+                    <button type="submit">
+                        <img src="https://e7.pngegg.com/pngimages/554/935/png-clipart-triumph-motorcycles-ltd-triumph-daytona-650-triumph-daytona-675-triumph-daytona-600-motorbike-exhaust-system-car.png" style="width:40px; height:auto;">
+                        Skicka beställning!
+                    </button>
+                </section>
             </section>
         </main>
         <hr>
