@@ -35,21 +35,23 @@ p {
     grid-template-columns: repeat(3, 1fr); /* Tre kolumner */
     gap: 20px; /* Mellanrum mellan hamburgarna */
     margin-top: 20px; /* Skapar avstånd från texten ovanför */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
 }
 
-.burger-grid div {
+.burger-item{
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 260px;
 }
 
-.burger-grid img {
+.burger-item img {
     width: auto; /* Responsiv */
     max-width: 200px; /* Begränsad bredd */
     height: 200px;
-
-
 }
 
 #info-section {
@@ -74,6 +76,9 @@ p {
     overflow: hidden;
     margin-top: -20px; /* Testa olika negativa värden för att justera höjden om det behövs */
     z-index: 1; /* Se till att texten ligger ovanpå bilden */
+    font-family: 'Chango', sans-serif; 
+    color: rgb(91, 3, 3);
+    font-size: 40pt;
 }
 
 #headerbild {
@@ -92,10 +97,6 @@ button:hover {
     padding: 10px 20px;
 }
 
-h1 {
-    font-family: 'Agbalumo';
-    font-size: 36pt;
-}
 main, header, footer, nav ul {
     max-width: 60rem;
     margin: 0 auto 0 auto;
@@ -104,46 +105,30 @@ main {
     background-color: white;
 }
 
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
-
-/*header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 200px;
-    opacity: 0.5;
-}*/
-
 header h1 {
     width:60rem;
     margin: 0 auto;
     text-align: center;
 }
 
-nav ul {
+/*nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, 9.25em);
     gap: 1em;
     padding: 0;
-}
+}*/
 
-nav li {
+/*nav li {
     display: block;
     background-color: grey;
     padding: 1em;
-}
+}*/
 
-.Very-good {
+/*.Very-good {
     color: green;
-}
+}*/
 
-.Master {
+/*.Master {
     color: green;
     font-weight: bold;
-}
+}*/

@@ -1,21 +1,27 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Cheeseburgare", 
+    "kCal": 780, 
+    "picture": "https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-3d-illustration-cheese-burger-png-image_10245728.png",
+    "lactose": true, 
+    "gluten": true,
+    "sugar": false,
+    "gelatine": false
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Halloumiburgare", 
+    "kCal": 830, 
+    "picture": "https://kfcrestaurants.be/wp-content/uploads/2021/04/Halloumi_Burger-1200x800px.png",
+    "lactose": true, 
+    "gluten": true,
+    "sugar": false,
+    "gelatine": false
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Godisburgare", 
+    "kCal": 1250, 
+    "picture": "https://simplywonderfultoys.ca/cdn/shop/products/efrutti-mini-burger-gummi-candy-candy-funhouse-online-candy-store-canada_500x_a5fa70b8-9624-4adc-91e7-e17a0ce38d3e_grande.jpg?v=1636570866",
     "lactose": false, 
-    "gluten": false
+    "gluten": false,
+    "sugar": true,
+    "gelatine": true
 }]
