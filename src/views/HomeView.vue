@@ -71,7 +71,7 @@
           <input type="radio" id="other" v-model=formData.gender value="Annat" />
           <label for="other">Annat</label><br />
 
-          <input type="radio" id="secret" v-model=formData.gender value="secret" checked/>
+          <input type="radio" id="secret" v-model=formData.gender value="Hemligt" checked/>
           <label for="secret">Hemligt</label>
         </section>
 
@@ -134,7 +134,7 @@ export default {
         name: "",
         email: "",
         payment: "Kreditkort",
-        gender: "Vill inte säga",
+        gender: "Hemligt",
       },
       orderedBurgers: {}, /*Här lagras de beställda hamburgarna*/
       location: { x: 0,
@@ -175,8 +175,6 @@ methods: {
   }
 }
 }
-
-
 </script>
 
 <style>
