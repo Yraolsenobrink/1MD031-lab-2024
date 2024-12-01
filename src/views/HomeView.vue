@@ -206,7 +206,7 @@ body {
     font-family: "Times New";
 }
 
-.p {
+p {
     color: white;
 }
 
