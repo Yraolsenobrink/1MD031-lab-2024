@@ -206,9 +206,14 @@ body {
     font-family: "Times New";
 }
 
-p {
+#info-section p {
     color: white;
 }
+
+#burgers-section p {
+    color: black;
+}
+
 
 .highlight {
     font-weight: bold;
